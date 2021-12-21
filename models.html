@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>USC Skateboard</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/shared.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/models.css" />
+
+    <!-- Fonts & Icons -->
+    <script
+      src="https://kit.fontawesome.com/4a9077762d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@200;400;500;600;700;800;900&family=Orbitron:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/logo.png" />
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+      <div>
+        <div id="logo">
+          <a href="index.html">
+            <img src="assets/logo.png" />
+          </a>
+          <a href="index.html">
+            <h1>USCSB</h1>
+          </a>
+        </div>
+        <button class="button">Models</button>
+      </div>
+      <div>
+        <button class="button">Contact</button>
+        <button class="button">Book Now</button>
+      </div>
+    </nav>
+
+    <!-- Models Attributes -->
+    <section id="models">
+      <!-- what do i want? centered downwards. FLEX -->
+      <div id="models_attributes">
+        <!-- why not flex? cuz why? -->
+        <h1 id="models_a_title">Choose Your Favorite Model</h1>
+        <!-- do i need flex? yes because there are two and i want: CENTERED CENTERED ROW -->
+        <section id="models_products">
+          <!-- FLEX: COLUMN, CENTER, JUSTIFY_CONTENT: leave be -->
+          <div class="models_item">
+            <img src="assets/board1_front.png" alt="board1_front" />
+            <div>
+              <h1>SC Board NO.1</h1>
+              <div>
+                <ul>
+                  <li>
+                    <p>Max Speed</p>
+                    <p>25mph | 40km/hr</p>
+                  </li>
+                  <li>
+                    <p>Range</p>
+                    <p>20mi | 32km</p>
+                  </li>
+                  <li>
+                    <p>Weight</p>
+                    <p>17lbs | 7.7kg</p>
+                  </li>
+                </ul>
+                <ul>
+                  <li>Max Climbing Angles - 30 degrees</li>
+                  <li>Battery Capacity - 259Wh</li>
+                  <li>Waterproof Rating - IP55</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="models_item">
+            <img src="assets/board2.png" alt="board2_front" />
+            <div>
+              <h1>SC Board NO.2</h1>
+              <div>
+                <ul>
+                  <li>Max Speed <br />25mph | 40km/hr</li>
+                  <li>Range <br />20mi | 32km</li>
+                  <li>Weight <br />17lbs | 7.7kg</li>
+                </ul>
+                <ul>
+                  <li>Max Climbing Angles - 30 degrees</li>
+                  <li>Battery Capacity - 259Wh</li>
+                  <li>Waterproof Rating - IP55</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div id="models_benefits"></div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+#landing {
+  margin-top: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50em;
+  padding: 1em;
+  background: #f6f6f6;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  font-weight: 400;
+}
+
+#landing > div {
+  display: flex;
+  justify-content: center;
+}
+
+#landing_text {
+  width: 50%;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8em;
+}
+
+#landing_title {
+  width: 100%;
+  font-size: 3em;
+  margin-bottom: 0.6em;
+  font-weight: 500;
+}
+
+#landing_paragraph {
+  font-size: 3em;
+  font-weight: 300;
+}
+
+#landing_traits {
+  list-style: none;
+  font-size: 1.3em;
+  margin: 1em 0;
+}
+
+#landing_traits li {
+  margin: 0.4em;
+}
+
+#landing_traits li i {
+  font-size: 0.8em;
+  margin-right: 0.4em;
+}
+
+#landing_buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#landing_buttons button {
+  background-color: var(--primary-dark);
+  padding: 1em 3em;
+}
+
+#landing_image,
+#landing_image img {
+  transition: all var(--all-transition);
+}
+
+#landing_image {
+  width: 400px;
+  overflow: hidden;
+  align-items: center;
+  box-shadow: var(--box-shadow-stronger);
+}
+
+#landing_image:hover {
+  box-shadow: var(--box-shadow-strongest);
+}
+
+#landing_image img {
+  width: 100%;
+  cursor: pointer;
+}
+
+@media (max-width: 1550px) {
+  #landing_text {
+    padding: 3em;
+  }
+
+  #landing_title {
+    font-size: 2.2em;
+  }
+
+  #landing_paragraph {
+    font-size: 1.1em;
+  }
+
+  #landing_image {
+    width: 300px;
+  }
+
+  #landing_buttons button {
+    padding: 1em 1em;
+  }
+}
+
+@media (max-width: 720px) {
+  #landing {
+    flex-direction: column;
+    height: unset;
+    padding-bottom: 3em;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #landing_text {
+    width: 100%;
+    padding: 3em;
+  }
+
+  #landing_image {
+    width: 80%;
+  }
+  #landing_buttons {
+    justify-content: center;
+  }
+
+  #landing_buttons button {
+    padding: 1em 1em;
+  }
+}
